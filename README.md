@@ -14,7 +14,7 @@ Discord bot that posts an admin-panel embed on startup. Admins can click a butto
    - `Use External Emojis` is not required.
 5. Copy `.env.example` to `.env`.
 6. Fill in:
-   - `DISCORD_TOKEN`
+   - `DISCORD_TOKEN` or `BOT_TOKEN`
    - `ADMIN_CHANNEL_ID`
 7. Install and run:
 
@@ -32,9 +32,10 @@ npm start
 
 ## Free Hosting
 
-Best free option for this bot:
+Free options for this bot:
 
 - Discloud: made for Discord bots, supports bot/background services, and can run bots on the Free plan with limits.
+- Wispbyte: supports Node.js Discord bots and dashboard environment variables.
 
 This project already includes `discloud.config`:
 

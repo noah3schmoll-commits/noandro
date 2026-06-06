@@ -24,12 +24,12 @@ const CUSTOM_IDS = {
   cancel: "browsergame-roles:cancel",
 };
 
-const token = process.env.DISCORD_TOKEN;
+const token = process.env.DISCORD_TOKEN || process.env.BOT_TOKEN;
 const adminChannelId = process.env.ADMIN_CHANNEL_ID || "1512799809365606440";
 const deleteOldPanel = process.env.DELETE_OLD_PANEL !== "false";
 
 if (!token) {
-  console.error("DISCORD_TOKEN fehlt. Erstelle eine .env Datei oder setze die Variable beim Hoster.");
+  console.error("DISCORD_TOKEN oder BOT_TOKEN fehlt. Erstelle eine .env Datei oder setze die Variable beim Hoster.");
   process.exit(1);
 }
 
