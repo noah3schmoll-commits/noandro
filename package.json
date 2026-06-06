@@ -1,0 +1,17 @@
+{
+  "name": "browsergame-role-bot",
+  "version": "1.0.0",
+  "description": "Discord bot for assigning and removing browser game roles from an admin panel.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.26.4",
+    "dotenv": "^16.4.7"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
